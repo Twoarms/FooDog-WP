@@ -1,0 +1,15 @@
+.craftblog-activation-notice {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-left: 0 !important;
+	border-top: 1px solid #0085BA;
+}
+
+.craftblog-activation-notice h1 {
+	margin-bottom: 0 !important;
+}
+
+.craftblog-activation-notice p:first-of-type {
+	margin-bottom: 20px !important;
+}
