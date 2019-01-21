@@ -108,11 +108,11 @@
         <nav class="navbar navbar-expand navup2">
 
             <!-- Navbar brand -->
-
+                        
             <div class="collapse navbar-collapse" id="basicExampleNav">
-
+                
                 <!-- Links -->
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto yo">
                     <li class="nav-item active">
                         <a class="nav-link" href="http://localhost/foodog/category/nutrition/">Nutrition</a>
                     </li>
