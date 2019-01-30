@@ -68,18 +68,18 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/foodog/wp-content/uploads/2019/01/logo-facebook_318-10753.jpg"></a>
+                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/wordpress/wp-content/themes/understrap_child/img/facebook.jpg"></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/foodog/wp-content/uploads/2019/01/twitter.png"></a>
+                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/wordpress/wp-content/themes/understrap_child/img/twitter.png"></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/foodog/wp-content/uploads/2019/01/insta.jpg"></a>
+                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/wordpress/wp-content/themes/understrap_child/img/insta.jpg"></a>
             </li>
             
             <button type="button" data-toggle="modal" data-target="#infos" class="btn loupe">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img class="imageNav" src="foodog/wp-content/uploads/2019/01/Find01-512.png"></a>
+                    <a class="nav-link" href="#"><img class="imageNav" src="http://localhost/wordpress/wp-content/themes/understrap_child/img/loupe.png"></a>
                 </li>
             </button>
             <div class="modal" id="infos">

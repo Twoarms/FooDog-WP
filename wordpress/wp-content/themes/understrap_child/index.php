@@ -20,6 +20,10 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<?php
+include 'pub.php';
+?>
+
 <?php if ( is_front_page() && is_home() ) : ?>
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
@@ -34,30 +38,65 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
+			
 
-				<?php if ( have_posts() ) : ?>
+			<div class="col-sm">
+					<div class="footertitle">POPULAR POST</div>
+					<?php
 
-					<?php /* Start the Loop */ ?>
+				$recentPosts = new WP_Query();
 
-					<?php while ( have_posts() ) : the_post(); ?>
+				$sticky = get_option('sticky_posts');
 
-						<?php
+				$args = array(
+				
+				'order' => 'DSC',
+				
+				'orderby' => 'date',
+				
+				'post__in' => $sticky,
 
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'loop-templates/content', get_post_format() );
-						?>
+				
+				);
 
-					<?php endwhile; ?>
+				$recentPosts->query($args);
 
-				<?php else : ?>
+				?>
 
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
+					<div class="row">
+						<?php $i = 0; while ($recentPosts->have_posts() && $i < 5) : $recentPosts->the_post();?>
+						<div class="col-sm-12">
+							<?php if ( has_post_thumbnail()) : ?>
+								<div class="col-sm-6">
+								<a href="" title=»<?php the_title_attribute(); ?> » >
+								<?php the_post_thumbnail(‘large’); ?></a></div>
+								<!-- <a href="" title=»<?php the_title_attribute(); ?> » > -->
+								<!-- <div class="col-sm-12">
+									<h3><a href="" title=»<?php the_title_attribute(); ?> »>
+											<?php the_title(); ?></a></h3>
+								</div> -->
+								<?php endif ?>
+						<?php $i++; endwhile ?>
 
-				<?php endif; ?>
+
+						<?php $i = 0; while ($recentPosts->have_posts() && $i < 0) : $recentPosts->the_post();?>
+						<article class="col-sm-12">
+							<?php if ( has_post_thumbnail()) : ?>
+								<div class="col-sm-3">
+								<a href="" title=»<?php the_title_attribute(); ?> » >
+								<?php the_post_thumbnail(‘large’); ?></a></div>
+								<!-- <a href="" title=»<?php the_title_attribute(); ?> » > -->
+								<!-- <div class="col-sm-12">
+									<h3><a href="" title=»<?php the_title_attribute(); ?> »>
+											<?php the_title(); ?></a></h3>
+								</div> -->
+								<?php endif ?>
+
+
+								</div>
+						<?php $i++; endwhile ?>
+					</div>
+				</div>
 
 			</main><!-- #main -->
 
@@ -69,8 +108,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- .row -->
 
+<?php dynamic_sidebar( 'right-sidebar' ); ?>
+
+</div><!-- #right-sidebar -->
+</div>
 	</div><!-- #content -->
 
 </div><!-- #index-wrapper -->
+
+
+
 
 <?php get_footer(); ?>

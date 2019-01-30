@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+
 	<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 	<div class="wrapper" id="wrapper-footer">

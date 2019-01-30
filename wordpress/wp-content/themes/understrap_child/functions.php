@@ -65,3 +65,13 @@ add_image_size('single-post', 350, 250);
 add_image_size('footer-post', 100, 100);
 add_image_size('Hero-one', 520, 320);
 add_image_size('Hero-post', 180, 160);
+
+register_sidebar( array(
+    'name'          => __( 'recherche', 'header' ),
+    'id'            => 'rechercher',
+    'description'   => __( 'Description de la zone de widgets.', 'dossierdevotretheme' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<div class="widget-title th3">',
+    'after_title'   => '</div>',
+) );

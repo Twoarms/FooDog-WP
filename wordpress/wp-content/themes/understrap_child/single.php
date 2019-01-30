@@ -13,6 +13,9 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<?php
+include 'pub.php';
+?>
 
 
 <div class="wrapper" id="single-wrapper">
