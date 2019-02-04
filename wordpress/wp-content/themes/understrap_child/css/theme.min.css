@@ -13942,6 +13942,102 @@ figure.woocommerce-product-gallery__wrapper {
   border: 1px solid #e9ecef;
 }
 
+div.wrapper div#content div div main div.amain h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+div.wrapper div#content div div main div.amain ul {
+  text-align: center;
+  list-style-type: none;
+}
+div.wrapper div#content div div main div.amain ul li a {
+  color: red;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+div.wrapper div#content div div main div.amain a {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+div.wrapper div#content div div main div.imgmain img {
+  height: 200px !important;
+}
+div.wrapper div#content div div main div.imgmain a {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+div.wrapper div div div div div p.mainfeaturedposts {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+div.wrapper div div div div div .featureportfolio4 {
+  margin-bottom: 25px;
+}
+div.wrapper div div div div div .featureportfolio4 img {
+  width: 450px !important;
+  height: 250px !important;
+}
+div.wrapper div div div div div .featureportfolio5 {
+  margin-bottom: 25px;
+}
+div.wrapper div div div div div .featureportfolio5 img {
+  width: 450px !important;
+  height: 250 !important;
+}
+div.wrapper div div div div div .featureportfolio6 {
+  margin-bottom: 25px;
+}
+div.wrapper div div div div div .featureportfolio6 img {
+  width: 450px !important;
+  height: 250 !important;
+}
+div.wrapper div div div div div p.pfeaturednurition {
+  color: red;
+}
+div.wrapper div div div div div div.featureportfolio7 {
+  width: 450px !important;
+  height: 250px !important;
+  margin-bottom: 15px;
+}
+div.wrapper div div div div div div.featureportfolio7 a {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+div.wrapper div div div div div div.featureportfolio8 {
+  width: 450px !important;
+  height: 250px !important;
+  margin-bottom: 123px;
+}
+div.wrapper div div div div div div.featureportfolio8 a {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+div.wrapper div div div div div div.featureportfolio9 {
+  width: 450px !important;
+  height: 250px !important;
+  margin-bottom: 100px;
+}
+div.wrapper div div div div div div.featureportfolio9 a {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+div.wrapper div div div div div a.ashare {
+  color: gray !important;
+  font-size: 30px !important;
+  font-weight: normal !important;
+}
+div.wrapper div div div div div p.lafinduindex a {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 body {
   background: white;
   font-family: "Open Sans", sans-serif;
@@ -14038,7 +14134,7 @@ img.imageNav {
   }
 }
 .pub {
-  right: 117px;
+  right: 90px;
   position: fixed;
   float: left;
   top: 252px;
