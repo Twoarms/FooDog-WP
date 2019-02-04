@@ -68,18 +68,18 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/wordpress/wp-content/themes/understrap_child/img/facebook.jpg"></a>
+                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/foodog-wp/wordpress/wp-content/themes/understrap_child/img/facebook.jpg"></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/wordpress/wp-content/themes/understrap_child/img/twitter.png"></a>
+                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/foodog-wp/wordpress/wp-content/themes/understrap_child/img/twitter.png"></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/wordpress/wp-content/themes/understrap_child/img/insta.jpg"></a>
+                <a class="nav-link" href="#" target="_blank"><img class="imageNav" src="http://localhost/foodog-wp/wordpress/wp-content/themes/understrap_child/img/insta.jpg"></a>
             </li>
             
             <button type="button" data-toggle="modal" data-target="#infos" class="btn loupe">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img class="imageNav" src="http://localhost/wordpress/wp-content/themes/understrap_child/img/loupe.png"></a>
+                    <a class="nav-link" href="#"><img class="imageNav" src="http://localhost/foodog-wp/wordpress/wp-content/themes/understrap_child/img/loupe.png"></a>
                 </li>
             </button>
             <div class="modal" id="infos">
@@ -118,16 +118,16 @@
                 <!-- Links -->
                 <ul class="navbar-nav mr-auto yo">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/wordpress/index.php/category/nutrition/">Nutrition</a>
+                        <a class="nav-link" href="/foodog-wp/wordpress/index.php/category/nutrition/">Nutrition</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/wordpress/index.php/category/wellness/">Welness</a>
+                        <a class="nav-link" href="/foodog-wp/wordpress/index.php/category/wellness/">Welness</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/wordpress/index.php/category/lifestyle/">Lifestyle</a>
+                        <a class="nav-link" href="/foodog-wp/wordpress/index.php/category/lifestyle/">Lifestyle</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/wordpress/index.php/category/community/">Community</a>
+                        <a class="nav-link" href="/foodog-wp/wordpress/index.php/category/community/">Community</a>
                     </li>
                 </ul>
             </div>

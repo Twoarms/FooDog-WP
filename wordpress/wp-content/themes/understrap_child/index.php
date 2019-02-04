@@ -67,7 +67,7 @@ $recentPosts->query($args);
 											<?php if (has_post_thumbnail()): ?>
 											<div class="col-sm-6">
 												<a href="" title=»<?php the_title_attribute();?> » >
-													<?php the_post_thumbnail(‘large’);?></a>
+													<?php the_post_thumbnail('large');?></a>
 													<h3><?php the_category();?>
 														<a href="" title=»<?php the_title_attribute();?> »>
 													<?php the_title();?></a></h3>
@@ -81,7 +81,7 @@ $recentPosts->query($args);
 													<div class="col-sm-6 imgmain">
 														<?php if (has_post_thumbnail()): ?>
 														<a href="" title=»<?php the_title_attribute();?> » >
-															<?php the_post_thumbnail(‘thumbnail’);?></a>
+															<?php the_post_thumbnail('thumbnail');?></a>
 															<h3><a href="" title=»<?php the_title_attribute();?> »>
 															<?php the_title();?></a></h3></div>
 													<?php endif?>
@@ -192,16 +192,18 @@ endif;
 		</div>
 <?php endwhile; endif; ?>
 
-
-
-
-
+<?php
+	if( is_active_sidebar( 'pagination' ) ):
+	dynamic_sidebar( 'pagination' );
+	endif;
+?>
 
 	</main><!-- #main -->
 
 
 	<!-- The pagination component -->
-	<?php understrap_pagination();?>
+		<div class="test"><h1>test</h1>	<?php understrap_pagination();?>
+		<?php understrap_pagination(); ?></div>
 
 	<!-- Do the right sidebar check -->
 	<?php get_template_part('global-templates/right-sidebar-check');?>
@@ -215,8 +217,5 @@ endif;
 </div><!-- #content -->
 
 </div><!-- #index-wrapper -->
-
-
-
 
 <?php get_footer();?>

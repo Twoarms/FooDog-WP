@@ -4,19 +4,14 @@
  *
  * @package understrap
  */
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
 if ( ! function_exists( 'understrap_pagination' ) ) {
-
 	function understrap_pagination( $args = array(), $class = 'pagination' ) {
-
 		if ( $GLOBALS['wp_query']->max_num_pages <= 1 ) {
 			return;
 		}
-
 		$args = wp_parse_args(
 			$args,
 			array(
@@ -29,9 +24,7 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 				'current'            => max( 1, get_query_var( 'paged' ) ),
 			)
 		);
-
 		$links = paginate_links( $args );
-
 		?>
 
 		<nav aria-label="<?php echo $args['screen_reader_text']; ?>">
@@ -55,5 +48,4 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 		<?php
 	}
 }
-
 ?>

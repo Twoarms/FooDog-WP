@@ -81,7 +81,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<div class="row">
 								<?php if ( has_post_thumbnail()) : ?>
 								<a href="" title=»<?php the_title_attribute(); ?> » >
-									<?php the_post_thumbnail(‘large’); ?></a>
+									<?php the_post_thumbnail('large'); ?></a>
 								<div class="col-sm-6">
 									<h3><a href="" title=»<?php the_title_attribute(); ?> »>
 											<?php the_title(); ?></a></h3>
