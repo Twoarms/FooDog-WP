@@ -21,6 +21,7 @@ $container = get_theme_mod('understrap_container_type');
 ?>
 
 <?php
+include 'debug.php';
 include 'pub.php';
 ?>
 
